@@ -1,4 +1,5 @@
 import React, { PureComponent } from 'react';
+import { connect } from 'react-redux';
 
 import Section from './Section';
 
@@ -20,4 +21,10 @@ SectionList.propTypes = {
   sections : React.PropTypes.arrayOf(React.PropTypes.object).isRequired
 };
 
-export default SectionList;
+const mapStateToProps = (state) => {
+  return {
+    sections : state.sections
+  }
+};
+
+export default connect(mapStateToProps)(SectionList);

@@ -1,2 +1,14 @@
-export const SIGN_IN  = "SIGN_IN";
-export const SIGN_OUT = "SIGN_OUT";
+export const SIGN_IN_START       = "SIGN_IN_START";
+export const SIGN_IN_COMPLETE    = "SIGN_IN_COMPLETE";
+export const SIGN_IN_ERROR       = "SIGN_IN_ERROR";
+
+export const SIGN_OUT            = "SIGN_OUT";
+export const CLEAR_SIGN_IN_ERROR = "CLEAR_SIGN_IN_ERROR";
+
+export const GET_SECTIONS   = "SECTIONS_GET_SECTIONS";
+export const CREATE_SECTION = "SECTIONS_CREATE_SECTION";
+export const UPDATE_SECTION = "SECTIONS_UPDATE_SECTION";
+export const DELETE_SECTION = "SECTIONS_DELETE_SECTION";
+export const ADD_LINK       = "SECTIONS_ADD_LINK";
+export const UPDATE_LINK    = "SECTIONS_UPDATE_LINK";
+export const DELETE_LINK    = "SECTIONS_DELETE_DELETE";

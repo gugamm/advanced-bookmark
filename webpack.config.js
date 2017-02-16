@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const VENDORS = [
-  'react', 'react-dom', 'react-redux', 'react-router', 'react-router-redux',
+  'react', 'react-dom', 'react-redux', 'react-router', 'redux-api-mapper',
   'redux', 'redux-form'
 ];
 

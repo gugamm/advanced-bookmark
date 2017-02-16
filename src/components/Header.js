@@ -5,12 +5,12 @@ import { connect } from 'react-redux';
 class Header extends PureComponent {
   render() {
     return (
-      <nav className="header-component nav navbar-default">
+      <nav className="header-component nav navbar-inverse">
         <div className="container-fluid">
           <Link to="/" className="navbar-brand">Bookmark</Link>
           <ul className="navbar-nav nav navbar-right">
-            {!this.props.auth && <li><Link to="signin">Sign In</Link></li>}
-            {this.props.auth && <li><Link to="signout">Sign Out</Link></li>}
+            {!this.props.authenticated && <li><Link to="signin">Sign In</Link></li>}
+            {this.props.authenticated && <li><Link to="signout">Sign Out</Link></li>}
           </ul>
         </div>
       </nav>
@@ -19,12 +19,12 @@ class Header extends PureComponent {
 }
 
 Header.propTypes = {
-  auth : React.PropTypes.bool.isRequired
+  authenticated : React.PropTypes.bool.isRequired
 };
 
 function mapStateToProps(state) {
   return {
-    auth : state.auth
+    authenticated : state.auth.authenticated
   };
 }
 
